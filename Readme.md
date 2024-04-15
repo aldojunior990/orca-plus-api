@@ -13,7 +13,7 @@ This is an application that generates budgets. An user logs in and register your
 
 1) User needs to register on the application. 
 2) A registered user can log in to the application. He receives a JWT token that he must use in the next requests.
-3) A logged user can create, update, delete and retrieve your quotes, your customers and your products.
+3) A logged user can create, update, delete and retrieve your budgets, your customers and your products.
 
 ### Endpoints
 
