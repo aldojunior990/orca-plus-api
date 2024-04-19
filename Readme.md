@@ -49,9 +49,8 @@ This is an application that generates budgets. An user logs in and register your
 ```
     POST /budget - Create a new budget.
     GET /budget - Get all budgets from a authenticated user.
-    GET /budget/{budgetId} - Get one budget from a authenticated user by budgetId.
-    DELETE /budget/{budgetId} - Delete a budget from a authenticated user.
 ```
+
 
 ### Models
 * **User**
@@ -72,15 +71,19 @@ This is an application that generates budgets. An user logs in and register your
   * id: UUID
   * Name: String
   * Price: Double
+  
+* **BudgetItem** 
+    * id: UUID PK 
+    * budget_id: UUID FK
+    * product_id: UUID FK
+    * amount: Int
 
 * **Budget**
   * ID: UUID;
   * date: Date
   * total_price: Double
-  * client_name: String
-  * client_address: String
-  * client_contact: String
-  * products: List<Product>
+  * client_id: UUID FK
+  * products: List<BudgetItem>
   * user_id: UUID
  
     
