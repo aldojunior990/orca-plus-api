@@ -81,7 +81,6 @@ This is an application that generates budgets. An user logs in and register your
 * **Budget**
   * ID: UUID;
   * date: Date
-  * total_price: Double
   * client_id: UUID FK
   * products: List<BudgetItem>
   * user_id: UUID
